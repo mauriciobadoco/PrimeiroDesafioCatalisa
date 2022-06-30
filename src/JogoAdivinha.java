@@ -22,18 +22,13 @@ public class JogoAdivinha {
             pontos = pontos + 5;
             System.out.println("Você ganhou 5 pontos");
             System.out.println("Você tem mais uma chance, digite outro número");
-            int jogada2 = input.nextInt();
-            jogo2 = jogada2;
+            jogo2 = input.nextInt();
 
                 if (jogo2 == valor) {
                     pontos = pontos + 10;
                     System.out.println("Você Venceu, Total de pontos: " + pontos);
-                } else if (((jogo2 != valorMaior)) || (jogo2 != (valorMenor))) {
+                } else {
                     System.out.println("Você perdeu");
-                } else if (jogador == jogo2) {
-                     System.out.println("Número digitado repetido");
-                }else{
-                    pontos = pontos + 5;
                 }
             }else
             System.out.println("Você perdeu");
